@@ -41,7 +41,7 @@ const Index = () => {
           .map(file => ({
             name: file.name,
             uri: file.uri,
-            mimeType: file.mimeType,
+            mimeType: file.mimeType ?? 'image/jpeg',
             lasmodified: file.lastModified,
             size: file.size
           }))
@@ -143,7 +143,7 @@ const Index = () => {
           renderItem={renderStorage}
         /> :
         <Text style={style.text}>
-          Vide.
+          Empty.
         </Text>
       }
       {files.length > 0 ?
