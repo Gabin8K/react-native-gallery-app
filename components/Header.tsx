@@ -22,7 +22,7 @@ export default memo(function ({ active, scrollY, onSelectAll, onUnselectAll, onD
   const { value: { colors } } = useTheme();
 
   const uasText = useAnimatedStyle(() => {
-    const translateY = interpolate(scrollY.value, [0, 40], [0, active ? 40 : 20], 'clamp');
+    const translateY = interpolate(scrollY.value, [0, 40], [0, active ? 40 : 10], 'clamp');
     const translateX = interpolate(scrollY.value, [0, 50], [0, -65], 'clamp');
     const scale = interpolate(scrollY.value, [0, 50], [1, 0.6], 'clamp');
     return {
