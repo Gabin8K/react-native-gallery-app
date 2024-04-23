@@ -24,7 +24,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.fullstackdev2022.galleryapp"
+      "package": "com.gabingaby.galleryapp"
     },
     "plugins": [
       "expo-router",
