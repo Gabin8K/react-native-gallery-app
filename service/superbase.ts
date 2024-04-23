@@ -18,7 +18,7 @@ export async function uploadFile(files: File[]) {
     formData.append('file', {
       uri: file.uri,
       name,
-      type: file.mimeType
+      type: file.mimeType ?? 'image/jpeg'
     } as any);
     const { data, error } = await supabase.storage.from('files').upload(name, formData);
     if (!data) {

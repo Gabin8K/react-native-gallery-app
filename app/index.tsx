@@ -41,7 +41,7 @@ const Index = () => {
           .map(file => ({
             name: file.name,
             uri: file.uri,
-            mimeType: file.mimeType ?? 'image/jpeg',
+            mimeType: file.mimeType,
             lasmodified: file.lastModified,
             size: file.size
           }))
