@@ -52,7 +52,7 @@ export async function fetchFiles() {
     files.push({
       ...file,
       name: file.name,
-      mimeType: file.metadata.mimeType,
+      mimeType: file.metadata.mimeType ?? 'image/jpeg',
       size: file.metadata.size,
       lastModified: new Date(file.last_accessed_at).getTime(),
       uri: data.publicUrl
