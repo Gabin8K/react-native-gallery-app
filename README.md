@@ -2,7 +2,7 @@
 
 ## React Native Gallery App + Supabase⚡️
 
-![enter image description here](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*0XLWZJULuqT_yGYw.jpg)
+![App Screenshot](https://ctzjgtlftzqiaqluuiuo.supabase.co/storage/v1/object/sign/app-images/gallery-app.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcHAtaW1hZ2VzL2dhbGxlcnktYXBwLnBuZyIsImlhdCI6MTcxMzgzODY2MCwiZXhwIjoxNzE0MTg0MjYwfQ.s7ptnU753jKmCptiRTvzxelfdwZTD7a5WSo74ZlBHgs&t=2024-04-23T02%3A17%3A40.354Z)
 
 **This application uses super core storage to perform CRUD operations on files uploaded from the device.* 
 The objective of this application was to exploit the functionalities of Supabase, make some animations and develop components without using a UI library.*
