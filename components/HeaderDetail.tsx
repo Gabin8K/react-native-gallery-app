@@ -39,10 +39,6 @@ export default memo<Props>(function ({ name, uri }) {
         title: 'Sharing this picture',
         message: uri,
       })
-      if(result.action === Share.sharedAction){
-        toast.success('Shared successfully');
-        return;
-      }
     } catch (err) {
       toast.error(String(err));
     }
@@ -63,6 +59,7 @@ export default memo<Props>(function ({ name, uri }) {
           >
             <Ionicons
               name={'chevron-back'}
+              color={colors.text}
               size={24}
             />
           </AnimatedPressable>
@@ -81,6 +78,7 @@ export default memo<Props>(function ({ name, uri }) {
         >
           <Ionicons
             name={'share-social-outline'}
+            color={colors.text}
             size={24}
           />
         </AnimatedPressable>

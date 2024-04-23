@@ -4,6 +4,7 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import useTheme from '@/hooks/useTheme';
 import { StatusBar } from 'expo-status-bar';
 import ToastProvider from './ToastProvider';
+import ConfigProvider from './ConfigProvider';
 
 export default function Providers({ children }: PropsWithChildren<{}>) {
   const { value, mode } = useTheme();
@@ -20,7 +21,9 @@ export default function Providers({ children }: PropsWithChildren<{}>) {
           }}
         >
           <ToastProvider>
-            {children}
+            <ConfigProvider>
+              {children}
+            </ConfigProvider>
           </ToastProvider>
         </SafeAreaView>
       </ThemeProvider>

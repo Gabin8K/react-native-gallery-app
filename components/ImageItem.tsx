@@ -30,8 +30,8 @@ export default memo(function ({ storage, onDelete }: Props) {
       setShow(false);
       return;
     }
-    router.push({
-      pathname:'/detail',
+    router.navigate({
+      pathname: '/detail',
       params: { storage: JSON.stringify(storage) }
     })
   }, [show, storage]);
@@ -44,7 +44,10 @@ export default memo(function ({ storage, onDelete }: Props) {
       onPress={onPress}
     >
       <Animated.Image
-        source={{ uri: storage.uri }}
+        source={{
+          uri: storage.uri,
+          cache: 'only-if-cached'
+        }}
         sharedTransitionTag={'sharedTag'}
         style={[style.image, uas]}
       />

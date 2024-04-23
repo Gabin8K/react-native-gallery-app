@@ -66,10 +66,12 @@ export default memo(function ({ active, scrollY, onSelectAll, onUnselectAll, onD
           >
             <Ionicons
               name={'checkmark-circle-outline'}
+              color={colors.primary}
               size={18}
             />
             <Text
               semiBold
+              color={colors.primary}
               size={10}
             >
               Select All
@@ -82,10 +84,12 @@ export default memo(function ({ active, scrollY, onSelectAll, onUnselectAll, onD
           >
             <Ionicons
               name={'close-circle-outline'}
+              color={colors.primary}
               size={18}
             />
             <Text
               semiBold
+              color={colors.primary}
               size={10}
             >
               Unselect All
@@ -98,10 +102,12 @@ export default memo(function ({ active, scrollY, onSelectAll, onUnselectAll, onD
           >
             <Ionicons
               name={'trash-outline'}
+              color={colors.primary}
               size={18}
             />
             <Text
               semiBold
+              color={colors.primary}
               size={10}
             >
               Del. Selection
@@ -114,10 +120,12 @@ export default memo(function ({ active, scrollY, onSelectAll, onUnselectAll, onD
           >
             <Ionicons
               name={'trash-bin-outline'}
+              color={colors.primary}
               size={18}
             />
             <Text
               semiBold
+              color={colors.primary}
               size={10}
             >
               Clear List

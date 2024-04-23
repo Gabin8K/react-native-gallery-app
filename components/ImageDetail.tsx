@@ -13,7 +13,7 @@ type Props = {
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 export default memo(function ({ uri }: Props) {
-  const { style } = useStyle(styles);
+  const { style, value: { colors } } = useStyle(styles);
 
   const [show, setShow] = useState(false);
 
@@ -86,6 +86,7 @@ export default memo(function ({ uri }: Props) {
         >
           <Ionicons
             name={'refresh'}
+            color={colors.text}
             size={18}
           />
         </AnimatedPressable> :
