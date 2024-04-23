@@ -3,9 +3,13 @@
 # dependencies
 node_modules/
 
+#ide
+.idea
+.vscode
+.env
+
 # Expo
 .expo/
-.env
 dist/
 web-build/
 
@@ -29,8 +33,6 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
 
 # typescript
 *.tsbuildinfo
