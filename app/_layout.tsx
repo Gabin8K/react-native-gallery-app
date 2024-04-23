@@ -20,7 +20,7 @@ export default function RootLayout() {
     if (Platform.OS === 'android') {
       NavigationBar.setBackgroundColorAsync(value.colors.background);
     }
-  }, [])
+  }, [value])
 
 
   if (!loaded || error) {
