@@ -184,6 +184,7 @@ const styles = createStyleSheet(({ colors, space }) => ({
   list2: {
     marginTop: 30,
     height: 200,
+    maxHeight: 200,
     borderRadius: 8,
     padding: 4,
     paddingTop: 0,
